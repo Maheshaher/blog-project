@@ -1,0 +1,211 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    padding: 1rem 2rem;
+    max-width: 95vw;
+    /* background-color: aqua; */
+    height: 100px;
+    margin: 1px auto;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    width: 30vw;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.transiation {
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.blog {
+    transition: all .5s ease-in;
+    transform: translateY(0.1 rem);
+    opacity: 0;
+}
+
+.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.disc,
+.blog {
+    margin-top: 1.7rem;
+
+}
+
+.disc {
+    color: rgb(109, 103, 103);
+}
+
+.main {
+
+    width: 65vw;
+    /* height: 93vh; */
+    /* margin-top: 10px; */
+
+
+    margin: 3.5rem auto;
+    /* background-color: rgb(43, 255, 0); */
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.3rem;
+
+}
+
+@media (min-width:650px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.3rem;
+
+    }
+
+
+}
+
+
+@media (min-width:1080px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+}
+
+
+
+@media (min-width:1340px) {
+    .main {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+}
+
+.blog-container {
+    width: 100%;
+    /* height: 50%; */
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(120, 118, 118);
+    border-radius: 8px;
+}
+
+.img {
+    position: relative;
+    overflow: hidden;
+    height: 12rem;
+}
+
+.imgc {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.blog-container:hover .imgc {
+    transform: scale(1.2);
+    transition-duration: 200ms;
+}
+
+.discription {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 1.5rem;
+
+
+}
+
+.title {
+    color: rgb(65, 64, 65);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1rem;
+    margin-bottom: 0.5rem
+        /* margin: 0.5rem; */
+    ;
+
+}
+
+.title:hover {
+    color: rgb(84, 84, 180);
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.avtar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* align-items: end; */
+    gap: 1rem;
+    padding-left: 1rem;
+}
+
+.avtar-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.card_tag_container {
+    height: 24px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: end;
+
+
+}
+
+.tag {
+    color: black;
+    padding: 2px;
+}
